@@ -1,0 +1,114 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Guo Yanpei}
+
+\basicInfo{
+  \email{guo.yanpei@outlook.com} \textperiodcentered\ 
+  \phone{(+65) 80846903}
+}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Beihang University (BUAA)}, Beijing, China}{2019 -- 2023}
+\textit{B.S.} in School of Computer Science and Engineering, GPA: 3.78 / 4.00
+
+\datedsubsection{\textbf{National University of Singapore (NUS)}, Singapore}{2024}
+\textit{Research Assistance} in School of Computing
+
+\datedsubsection{\textbf{National University of Singapore (NUS)}, Singapore}{2025 -- 2029}
+\textit{Ph.D.} in School of Computing
+
+\section{\faBook\ Publication}
+
+\datedsubsection{\textbf{Fast RS-IOP Multivariate Polynomial Commitments and Verifiable Secret Sharing}}{}
+Zongyang Zhang*, Weihan Li*, \textbf{Yanpei Guo*}, Kexin Shi, Sherman S. M. Chow, Ximeng Liu, Jin Dong
+
+\textit{USENIX Security Symposium (Security), 2024}, Co-first Author.
+
+\textbf{Achievements:}
+\begin{itemize}
+  \item Rolling-batch FRI technique, batch proving proximity of multiple vectors with Reed-Solomon codes of different length. 
+  \textbf{This technique has been applied in open-source zero-knowledge project Plonky3}.
+  \item PolyFRIM, a multivariate polynomial commitment from RS code, leveraging rolling batch FRI, 5 times faster than prior work.
+  \item One-to-many proof for proving multiple evaluations to multiple verifiers based on PolyFRIM, accelerating proving by 4 times.
+  \item An asynchronous verifiable secret sharing (AVSS) scheme FRISS with a dealer complexity of $O(n^2 \log n)$. 
+\end{itemize}
+\textbf{My Duty:} Protocol design and proof, experiments
+
+\datedsubsection{\textbf{Succinct Hash-based Arbitrary-Range Proofs}}{}
+Zongyang Zhang, Weihan Li, \textbf{Yanpei Guo}, Sherman S. M. Chow, Zhiguo Wan
+
+\textit{IEEE Transactions on Information Forensics and Security(TIFS)}
+
+\textbf{Achievements:}
+\begin{itemize}
+  \item A plausible post-quantum secure range proof (RP).
+  \item A general bit-composition framework for ZK-RPs.
+\end{itemize}
+\textbf{My Duty:} Experiments
+
+\datedsubsection{\textbf{DeepFold: Efficient Multilinear Polynomial Commitment from Reed-Solomon Code and Its Application to Zero-knowledge Proofs}}{}
+\textbf{Yanpei Guo}, Xuanming Liu, Kexi Huang, Wenjie Qu, Tianyang Tao, Jiaheng Zhang
+
+\textit{USENIX Security Symposium (Security), 2025}, First Author
+
+\textbf{Achievements:}
+\begin{itemize}
+  \item Deepfold, a multilinear polynomial commitment scheme that achieves nearly identical prover time, verifier time, and proof size as DEEP-FRI.
+  It has about 3.5 times faster prover time or 3 times smaller proof size than prior work.
+  \item A batch variant of Deepfold, reducing the prover time by half while adding no additional overhead to the proof size.
+  \item A high-performance zero-knowledge argument system, by combining Deepfold with Libra.
+\end{itemize}
+\textbf{My Duty:} Protocol design and proof, experiments, paper writing
+
+% \section{\faBookmark\ Manuscript}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: Rust, C++, Golang, Python, Vue, SQL
+  \item Platform: Linux
+  \item Development: Database, Back-end, Front-end
+\end{itemize}
+
+\section{\faTrophy\ Honors and Awards}
+% \datedsubsection{\textbf{National Cryptographic technology Competition}}{2023, \textit{First Prize}}
+
+\datedsubsection{\textbf{Computer System Development Capability Competition, Operating System Kernel Design}}{2022,  \textit{First Prize, First Place}}
+
+\textbf{Achievements:}
+\begin{itemize}
+  \item Developed a microkernel operating system in C, compatible with QEMU and SiFive FU740 platforms.
+  \item Integrated support for Busybox, Lua, Redis, GCC, and Vim.
+  \item Significantly enhanced the FAT32 file system with optimizations that improve performance by up to two times compared to Linux in certain benchmarks.
+\end{itemize}
+
+\datedsubsection{\textbf{International Collegiate Programming Contest (ICPC) Asia Regional Contest Jinan Site}}{2020, \textit{Silver Medal, the 54th Place}}
+
+\datedsubsection{\textbf{The Chinese Mathematics Competitions for College Students (CMC)}}{2020, \textit{First Prize}}
+
+\section{\faHeartO\ TA experience}
+\datedsubsection{\textbf{Computer Organization}, Beijing, China}{2022.07 -- 2023.01}
+Superviaor: Xiaopeng Gao, School of Computer Science and Engineering, Beihang University
+\datedsubsection{\textbf{Operating System}, Beijing, China}{2021.01 -- 2022.06}
+Superviaor: Lei Wang, School of Computer Science and Engineering, Beihang University
+\datedsubsection{\textbf{Computer Organization}, Beijing, China}{2021.07 -- 2022.01}
+Superviaor: Xiaopeng Gao, School of Computer Science and Engineering, Beihang University
+\datedsubsection{\textbf{Computer Security, CS3235}, Singapore}{2025.01 -- 2025.05}
+Superviaor: Jiaheng Zhang, School of Computing, National University of Singapore
+
+
+\section{\faCertificate\ Language}
+\datedsubsection{\textbf{TOEFL}: Reading 28, Listening 23, Speaking 22, Writing 27}{2024.04}
+
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
